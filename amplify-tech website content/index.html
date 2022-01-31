@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Home</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+  <!-- Favicons -->
+  <link href="img/ak.jpeg" rel="icon">
+  <link href="img/ak.jpeg" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Montserrat:300,400,500,700" rel="stylesheet">
+
+  <!-- Bootstrap CSS File -->
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
+  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="lib/animate/animate.min.css" rel="stylesheet">
+  <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+  <!-- Main Stylesheet File -->
+  <link href="css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+ 
+  <!-- Load Facebook SDK for JavaScript -->
+      <div id="fb-root"></div>
+      <script>
+        window.fbAsyncInit = function() {
+          FB.init({
+            xfbml            : true,
+            version          : 'v7.0'
+          });
+        };
+
+        (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));</script>
+
+      <!-- Your Chat Plugin code -->
+      <div class="fb-customerchat"
+        attribution=setup_tool
+        page_id="101613608310107">
+      </div>
+  
+  
+  
+  
+  
+  
+  
+  
+
+  <!--==========================
+  Header
+  ============================-->
+  <header id="header" class="fixed-top">
+    <div class="container">
+
+      <div class="logo float-left">
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <h1 class="text-light"><a href="#header"><span>Amplify Tech</span></a></h1>
+      </div>
+
+      <nav class="main-nav float-right d-none d-lg-block">
+        <ul>
+          <li style="background-color: #e699ff;color: black;" class="active"><a href="index.html">Home</a></li>
+          <li style="background-color: #ffffcc;color: black;"><a href="courses.html">Courses</a></li>
+          <li style="background-color: #ffffcc;color: black;"><a href="programming.html">Programming</a></li>
+          <li style="background-color: #ffffcc;color: black;"><a href="aboutus.html">About us</a></li>
+        </ul>
+      </nav><!-- .main-nav -->
+      
+    </div>
+  </header><!-- #header -->
+
+  <!--==========================
+    Intro Section
+  ============================-->
+  <section id="intro" class="clearfix">
+    <div class="container">
+
+      <div class="intro-img">
+        <img src="img/intro-img.svg" alt="" class="img-fluid">
+      </div>
+
+      <div class="intro-info">
+        <h2>Learn<br><span>to</span><br>Code</h2>
+        <div>
+          <a href="courses.html" class="btn-get-started scrollto">Get Started</a>
+        </div>
+      </div>
+
+    </div>
+  </section><!-- #intro -->
+
+  <main id="main">
+
+  
+    <!--==========================
+      Portfolio Section
+    ============================-->
+    <section id="portfolio" class="clearfix">
+      <div class="container">
+
+        <header class="section-header">
+          <h3 class="section-title">Courses we provide</h3>
+        </header>
+
+        <div class="row">
+          <div class="col-lg-12">
+            <ul id="portfolio-flters">
+              <li data-filter="*" class="filter-active">All</li>
+              <li data-filter=".filter-lang">Languages</li>
+              <li data-filter=".filter-card">Database</li>
+              <li data-filter=".filter-web">Web development</li>
+              <li data-filter=".filter-app">App development</li>
+              <li data-filter=".filter-os">OS</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row portfolio-container">
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-lang">
+            <div class="portfolio-wrap">
+              <img src="img/portfolio/cpp.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4><a href="#">C++</a></h4>
+                <p>lang</p>
+                <div>
+                  <a href="img/portfolio/cpp.jpg" data-lightbox="portfolio" data-title="App 1" class="link-preview" title="Preview"><i class="ion ion-eye"></i></a>
+                  <a href="courses.html" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web" data-wow-delay="0.1s">
+            <div class="portfolio-wrap">
+              <img src="img/portfolio/html.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4><a href="#">Html</a></h4>
+                <p>Web</p>
+                <div>
+                  <a href="img/portfolio/html.png" class="link-preview" data-lightbox="portfolio" data-title="Web 3" title="Preview"><i class="ion ion-eye"></i></a>
+                  <a href="courses.html" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-lang" data-wow-delay="0.2s">
+            <div class="portfolio-wrap">
+              <img src="img/portfolio/python.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4><a href="#">Python</a></h4>
+                <p>lang</p>
+                <div>
+                  <a href="img/portfolio/python.jpg" class="link-preview" data-lightbox="portfolio" data-title="App 2" title="Preview"><i class="ion ion-eye"></i></a>
+                  <a href="courses.html" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-wrap">
+              <img src="img/portfolio/mysql.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4><a href="#">Mysql</a></h4>
+                <p>database</p>
+                <div>
+                  <a href="img/portfolio/mysql.jpg" class="link-preview" data-lightbox="portfolio" data-title="Card 2" title="Preview"><i class="ion ion-eye"></i></a>
+                  <a href="courses.html" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web" data-wow-delay="0.1s">
+            <div class="portfolio-wrap">
+              <img src="img/portfolio/css.jpeg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4><a href="#">CSS</a></h4>
+                <p>Web</p>
+                <div>
+                  <a href="img/portfolio/css.jpeg" class="link-preview" data-lightbox="portfolio" data-title="Web 2" title="Preview"><i class="ion ion-eye"></i></a>
+                  <a href="courses.html" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-lang" data-wow-delay="0.2s">
+            <div class="portfolio-wrap">
+              <img src="img/portfolio/java.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4><a href="#">Java</a></h4>
+                <p>lang</p>
+                <div>
+                  <a href="img/portfolio/java.png" class="link-preview" data-lightbox="portfolio" data-title="App 3" title="Preview"><i class="ion ion-eye"></i></a>
+                  <a href="courses.html" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-wrap">
+              <img src="img/portfolio/sqlite.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4><a href="#">Sqlite</a></h4>
+                <p>database</p>
+                <div>
+                  <a href="img/portfolio/sqlite.png" class="link-preview" data-lightbox="portfolio" data-title="Card 1" title="Preview"><i class="ion ion-eye"></i></a>
+                  <a href="courses.html" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card" data-wow-delay="0.1s">
+            <div class="portfolio-wrap">
+              <img src="img/portfolio/sqlpy.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4><a href="#">Sqlite + python</a></h4>
+                <p>database</p>
+                <div>
+                  <a href="img/portfolio/sqlpy.jpg" class="link-preview" data-lightbox="portfolio" data-title="Card 3" title="Preview"><i class="ion ion-eye"></i></a>
+                  <a href="courses.html" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app" data-wow-delay="0.1s">
+            <div class="portfolio-wrap">
+              <img src="img/portfolio/app.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4><a href="#">Android App</a></h4>
+                <p>App</p>
+                <div>
+                  <a href="img/portfolio/app.png" class="link-preview" data-lightbox="portfolio" data-title="Card 3" title="Preview"><i class="ion ion-eye"></i></a>
+                  <a href="courses.html" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web" data-wow-delay="0.2s">
+            <div class="portfolio-wrap">
+              <img src="img/portfolio/webdev.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4><a href="#">Web Development</a></h4>
+                <p>Web</p>
+                <div>
+                  <a href="img/portfolio/webdev.png" class="link-preview" data-lightbox="portfolio" data-title="Web 1" title="Preview"><i class="ion ion-eye"></i></a>
+                  <a href="courses.html" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-os" data-wow-delay="0.2s">
+            <div class="portfolio-wrap">
+              <img src="img/portfolio/ubuntu.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4><a href="#">Ubuntu</a></h4>
+                <p>Operating system</p>
+                <div>
+                  <a href="img/portfolio/ubuntu.jpg" class="link-preview" data-lightbox="portfolio" data-title="Web 1" title="Preview"><i class="ion ion-eye"></i></a>
+                  <a href="courses.html" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web" data-wow-delay="0.2s">
+            <div class="portfolio-wrap">
+              <img src="img/portfolio/js.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4><a href="#">JavaScript</a></h4>
+                <p>Web</p>
+                <div>
+                  <a href="img/portfolio/js.jpg" class="link-preview" data-lightbox="portfolio" data-title="Web 1" title="Preview"><i class="ion ion-eye"></i></a>
+                  <a href="courses.html" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 portfolio-item filter-os" data-wow-delay="0.2s">
+            <div class="portfolio-wrap">
+              <img src="img/portfolio/windows.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4><a href="#">Windows</a></h4>
+                <p>Operating system</p>
+                <div>
+                  <a href="img/portfolio/windows.png" class="link-preview" data-lightbox="portfolio" data-title="Web 1" title="Preview"><i class="ion ion-eye"></i></a>
+                  <a href="courses.html" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-lang" data-wow-delay="0.2s">
+            <div class="portfolio-wrap">
+              <img src="img/portfolio/bash.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4><a href="#">Bash</a></h4>
+                <p>lang</p>
+                <div>
+                  <a href="img/portfolio/bash.png" class="link-preview" data-lightbox="portfolio" data-title="Web 1" title="Preview"><i class="ion ion-eye"></i></a>
+                  <a href="courses.html" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- #portfolio -->
+
+  
+  <!--==========================
+      Why Us Section
+    ============================-->
+    <section id="why-us" class="wow fadeIn">
+      <div class="container">
+        <header class="section-header">
+          <h3>Why choose us?</h3>
+          <h3>All in one</h3>
+        </header>
+
+        <div class="row row-eq-height justify-content-center">
+
+          <div class="col-lg-4 mb-4">
+            <div class="card wow bounceInUp">
+                <i class="fa fa-diamond"></i>
+              <div class="card-body">
+                <h5 class="card-title">Syntax</h5>
+                <p class="card-text"> Here you will find well written syntax of many languages.Topics are well arranged so that they are easy to find.</p>
+                <a href="programming.html" class="readmore">Read more </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 mb-4">
+            <div class="card wow bounceInUp">
+                <i class="fa fa-language"></i>
+              <div class="card-body">
+                <h5 class="card-title">Practice</h5>
+                <p class="card-text">You can make your notes and can keep safe for later.There are questions available for practice. All types easy,medium and hard.There are well explained examples. </p>
+                <a href="programming.html" class="readmore">Read more </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 mb-4">
+            <div class="card wow bounceInUp">
+                <i class="fa fa-object-group"></i>
+              <div class="card-body">
+                <h5 class="card-title">Reference</h5>
+                <p class="card-text">There are attached link to great websites for coding purpose. For every app ,IDE,editor anything you are going to use for coding, links are given so that you can easily download.</p>
+                <a href="programming.html" class="readmore">Read more </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="row counters">
+
+          <div class="col-lg-3 col-6 text-center">
+            <span data-toggle="counter-up">4</span>
+            <p>Languages</p>
+          </div>
+
+          <div class="col-lg-3 col-6 text-center">
+            <span data-toggle="counter-up">5</span>
+            <p>Web development</p>
+          </div>
+
+          <div class="col-lg-3 col-6 text-center">
+            <span data-toggle="counter-up">2</span>
+            <p>operating system</p>
+          </div>
+
+          <div class="col-lg-3 col-6 text-center">
+            <span data-toggle="counter-up">25</span>
+            <p>Projects</p>
+          </div>
+  
+        </div>
+
+      </div>
+    </section>
+
+
+
+  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+  <footer style="background-color: black;">
+    <div class="container">
+    <p>The end</p>
+   </div>
+  </footer>
+  <!-- Uncomment below i you want to use a preloader -->
+  <!-- <div id="preloader"></div> -->
+
+  <!-- JavaScript Libraries -->
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/jquery/jquery-migrate.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+  <script src="lib/mobile-nav/mobile-nav.js"></script>
+  <script src="lib/wow/wow.min.js"></script>
+  <script src="lib/waypoints/waypoints.min.js"></script>
+  <script src="lib/counterup/counterup.min.js"></script>
+  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+  <script src="lib/isotope/isotope.pkgd.min.js"></script>
+  <script src="lib/lightbox/js/lightbox.min.js"></script>
+  <!-- Contact Form JavaScript File -->
+  <script src="contactform/contactform.js"></script>
+
+  <!-- Template Main Javascript File -->
+  <script src="js/main.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>C++</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="homestyle.css">
+</head>
+<style>
+  details{
+    /*background-color: #e6e6e6;*/
+    border: 0.5px solid green; 
+    background: linear-gradient(to bottom, #1aff8c 0%, #e6fff2 100%);
+  }
+  details a{
+    line-height: 0.75;
+  }
+  summary{
+    background-color: #1aff8c;
+    outline: none;
+    color: black;
+    font-size: 18px;
+    line-height: 1.8;
+  }
+  summary:hover{
+    background-color: white;
+  }
+  .small{
+    height: 130px;
+  }
+  .medium{
+    height: 190px;
+  }
+  .large{
+    height: 240px;
+  }
+  .simplecode{
+  background-color: #262626; color: white; 
+  font-style: monospace; font-size: 17px;
+  margin-bottom: 10px; padding:10px 5px 2px 10px; 
+  line-height: 0.8; 
+}
+ul{
+  list-style-type:disc;
+  /*active ,visited*/
+}
+  .blue{
+    color: #66ccff;
+  }
+  .green{
+    color: #66ff33;
+  }
+</style>
+
+<body onload="openNav()">
+
+<nav class="navbar navbar-inverse navbar-fixed-top" style="background-color: #db4dff;">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <button class="openbtn navbar-brand"  style="background-color: #3385ff; color: black;" onclick="openNav()">☰</button>
+      <a class="navbar-brand" style="color: black; margin-left: 2px;" href="index.html">Amplifytech</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+          <li class="active"><a href="cpphome.html">C++</a></li>
+          <li><a href="pyhome.html">Python</a></li>
+          <li><a href="javahome.html">Java</a></li>
+
+          <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="working.html">Web Development<span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="working.html">HTML</a></li>
+              <li><a href="working.html">CSS</a></li>
+              <li><a href="working.html">Javascript</a></li>
+            </ul>
+          </li>
+
+          <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="working.html"> Database<span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="working.html">Mysql</a></li>
+              <li><a href="working.html">sqlite</a></li>
+              <li><a href="working.html">postgres</a></li>
+            </ul>
+          </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+  
+<div class="container">
+  <br><br><br><br>
+<div id="mySidebar" class="sidebar" style="padding-left: 4px;">
+  <p style="font-size: 25px;">Topics</p>
+  <p class="activetopic"> <a href="#intro">Summary</a> </p>
+
+<details><summary> Commands to Run </summary>
+  <a href="#cmnd"> run program </a>
+</details> 
+<details><summary>Base Template</summary>
+  <a href="#syn"> syntax </a>
+
+</details> 
+<details><summary>Datatypes</summary>
+  <a href="#var"> variables </a> 
+  <a href="#str"> string </a> 
+  <a href="#cnvrsn"> conversion </a> 
+
+</details>
+<details><summary>Output</summary>
+  <a href="#cout"> cout </a> 
+  <a href="#format"> formatting </a> 
+
+</details> 
+<details><summary>Input</summary>
+  <a href="#cin"> cin </a>
+
+</details> 
+<details><summary>Conditional stmnt</summary>
+  <a href="#ifelse"> if else </a>
+  <a href="#swt"> switch </a>
+
+</details> 
+<details><summary>Loop</summary>
+  <a href="#forl"> for loop </a>
+  <a href="#while"> while loop </a>
+
+</details> 
+<details><summary>Function</summary>
+  <a href="#fnctn"> function </a>
+  <a href="#rcrsn"> recursion </a>
+  <a href="#byval"> passby value  </a>
+  <a href="#byrfr"> passby reference   </a>
+  <a href="#bypntr"> passby pointer  </a>
+  <a href="#lmda"> lambda </a> 
+  <a href="#fload"> function overloading </a>  
+
+</details> 
+<details><summary>Pointer</summary>
+  <a href="#pntr"> memory address </a>
+
+</details> 
+<details><summary>OOP (Class)</summary>
+  <a href="#cls"> class </a>
+  <a href="#strctr"> structure </a>
+  <a href="#obj"> object </a>
+  <a href="#mmfn"> member function </a>
+  <a href="#mmvar"> member variable </a> 
+  <a href="#cnstrct"> constructor </a> 
+  <a href="#dstcr"> destructor  </a> 
+  <a href="#static"> static </a>
+  <a href="#inhr"> inheritance </a>
+  <a href="#modfr"> access Modifier </a>
+  <a href="#pcls"> parent class </a>
+  <a href="#cclas"> child class </a>
+  <a href="#fclas"> friend class </a>
+  <a href="#nstd"> nested </a>
+  <a href="#encp"> encapsulation </a>
+  <a href="#polm"> polymorphism </a>
+
+
+</details> 
+<details><summary>Container</summary>
+<a href="#arr"> nd array    </a>
+<a href="#vec"> vector   </a>
+<a href="#dqe"> deque   </a>
+<a href="#flist"> forward_list    </a>
+<a href="#list"> list   </a>
+<a href="#stck"> stack   </a>
+<a href="#que"> queue   </a>
+<a href="#pque"> priority_queue   </a>
+<a href="#set"> set   </a>
+<a href="#mset"> multiset   </a>
+<a href="#map"> map   </a>
+<a href="#mmap"> multimap   </a>
+<a href="#uset"> unordered_set    </a>
+<a href="#umset"> unordered_multiset    </a>
+<a href="#umap"> unordered_map    </a>
+<a href="#ummap"> unordered_multimap  </a>
+
+</details> 
+<details><summary>Iterator</summary>
+  <a href="#itr"> iterator </a>
+
+</details> 
+<details><summary>Data structure</summary>
+  <a href="#cntr"> container </a>
+  <a href="#tree"> tree </a>
+  <a href="#grph"> graph </a>
+  <a href="#htbl"> hash tble </a>
+  <a href="#heap"> heap </a>
+
+</details> 
+<details><summary>Exception Handling</summary>
+  <a href="#try"> try-catch-throw </a>
+
+</details> 
+<details><summary>File Handling</summary>
+  <a href="#fin"> file as input </a>
+  <a href="#fout"> file as output </a>
+  <a href="#fupdt"> update a file </a>
+
+</details> 
+<details><summary>Basic Algorithm</summary>
+  <a href="#src"> searching </a>
+  <a href="#srting"> sorting </a>
+
+</details> 
+<details><summary>IMP Algorithm</summary>
+  <a href="#"> here </a>
+
+</details> 
+<details><summary>Basic inbuilt function</summary>
+  <a href="#mfn"> maths function </a>
+
+</details> 
+ <details><summary>IMP inbuilt function </summary>
+  <a href="#"> here </a>
+
+ </details>
+ <details><summary>Extra </summary>
+  <a href="#enum"> comments </a>
+  <a href="#enum"> enum </a>
+  <a href="#tdef"> typedef </a>
+
+ </details>
+
+ </div>
+
+
+<div id="main" class="mynotes">
+  <h1 class="maintopic"> C++ </h1>
+
+ <p class="subtopic" id="cmnd"> Commands to Run  the program</p>
+ <p> <b> filename </b>:- filename.cpp <br>
+     <b> compile  </b>:- g++  filename.cpp <br>
+     <b> Run program  </b>:- ./a.out <br> </p>
+   <div class="simplecode">
+     <p>  $ g++ filename.cpp </p>
+     <p>  $ ./a.out </p>
+   </div>
+
+  <p class="subtopic" id="syn">Basic Template - Syntax </p>
+  <iframe src="shortnote/cpptohtml/template.html"  class="mycode small"></iframe>
+  <p class="inc:shortnote/cpptohtml/template.htm"></p>
+
+  <p class="subtopic" id="datatyp"> Datatypes </p>
+  <p class="subtopic2" id="var"> variables </p>
+  <p>Some of the datatypes in cpp are <i>int, float, double, 
+    char, string, bool, void ... </i> </p>
+  <iframe src="shortnote/cpptohtml/var.html"  class="mycode small"></iframe>
+
+  <p class="subtopic2" id="str">string </p>
+  <p>we need to include a header file as <i> #include&ltstring&gt </i> </p>
+  <iframe src="shortnote/cpptohtml/string.html"  class="mycode medium"></iframe>
+
+  <p class="subtopic2" id="cnvrsn">conversion </p>
+    <ol><li>Implicit (automatic type conversion) </li>
+      <p>Done by the compiler on its own. type promotion takes place.<br>
+    <i> bool &#8680; char &#8680; short int &#8680; int &#8680; unsigned int &#8680; long &#8680; unsigned &#8680; long long &#8680; float &#8680; double &#8680; long double </i> </p>
+    <div class="simplecode">
+      <p>int x = 10 + 'a'</p>
+      <p>double z = x + 2.5</p>
+    </div>
+    <li>Explicit (type casting) </li>
+    <ul> <li>Converting by assignment:</li>
+      <div class="simplecode">
+        <p>(type) expression</p>
+        <p>double x = 1.2; </p>
+        <p>int sum = (int)x + 0.8;  //output sum=1</p>
+      </div>
+
+      <li>using Cast operator:</li> 
+      <div class="simplecode">
+        <p>float f = 3.5; </p>
+        <p>int b = static_cast<int>(f);</p>
+      </div>
+      <a href="https://www.geeksforgeeks.org/type-conversion-in-c/">learn more</a>
+
+  </ul>
+    </ol>
+
+  <p class="subtopic" id="cout">Output </p>
+  <p>cout is used to print something in c++ . </p>
+  <iframe src="shortnote/cpptohtml/output.html"  class="mycode small"></iframe>
+
+  <div class="outputdiv">
+    <button class="btnanm" onclick="myhide(this)">Output</button>
+    <div  class="output">
+      hello friends
+      How are you 10
+    </div>
+  </div>
+
+  <p class="subtopic" id="cin">Input </p>
+  <p>In c++ cin is used to take input something. </p>
+  <iframe src="shortnote/cpptohtml/input.html"  class="mycode small"></iframe>
+
+ 
+  <p class="subtopic" id=""> Conditional statement</p>
+  <p class="subtopic2" id="ifelse">if else </p>
+  <iframe src="shortnote/cpptohtml/ifelse.html"  class="mycode medium"></iframe>
+
+  <p class="subtopic2" id="swt">switch </p>
+  <iframe src="shortnote/cpptohtml/switch.html"  class="mycode medium"></iframe>
+
+
+  <p class="subtopic" id=""> Loop </p>
+  <p> A loop is used for executing a block of statements repeatedly until a particular condition is satisfied. <i>break</i> statement can be used to jump out of a loop, when some condition is satisfied. </p>
+  <p class="subtopic2" id="forl">for loop </p>
+  <iframe src="shortnote/cpptohtml/forloop.html"  class="mycode small"></iframe>
+  <p class="subtopic2" id="while">while loop </p>
+  <iframe src="shortnote/cpptohtml/whileloop.html"  class="mycode small"></iframe>
+
+  <p class="subtopic" id=""> Function </p>
+  <p class="subtopic2" id="fnctn">definition </p>
+  <p>Parameters act as variables inside the function. Datatypes of parameters is needed in fn def. arguments are parameters passed to the function on function call.</p>
+
+  <div class="simplecode">
+    <p> <span class="blue"> return_type </span> <span class="green">function_name </span>( parameter list ) { </p>
+   <p> &emsp; //body of the function       </p>
+   <p> &emsp; //task to be performed by the function  </p>
+    <p> } </p>
+  </div>
+  <iframe src="shortnote/cpptohtml/fndef.html"  class="mycode large"></iframe>
+
+  <p class="subtopic2" id="rcrsn"> recursion </p>
+  <p>The process in which a function calls itself directly or indirectly is called recursion (recursive function). eg fact(n)= n! = n*fact(n-1)</p>
+  <iframe src="shortnote/cpptohtml/recursion.html"  class="mycode small"></iframe>
+
+  <p class="subtopic2" id="fload">function overloading </p>
+  <p>With function overloading, multiple functions can have the same name with different parameters (only datatype can be changed).  </p>
+  <div class="simplecode">
+  <p> <span class="blue"> int </span> <span class="green"> myFunction </span>(int x) </p>
+  <p> <span class="blue"> float </span> <span class="green"> myFunction </span>(float x) </p>
+  <p> <span class="blue"> double </span> <span class="green"> myFunction </span>(double x, double y) </p>
+    
+  </div>
+
+
+  <p class="subtopic" id="">Container </p>
+  <p class="subtopic2" id="arr">Array </p>
+  <p> Array is a collection of variables of same datatypes. Array is
+   used when we have to deal with large number variables. an array has a 
+  fixed size and its i'th element can be access by <b> <i> arrayname[i] </i></b>. we need to write
+  array size during initialisition of array as <b> <i>datatype arrayname[size];</i> </b>   </p>
+  <iframe src="shortnote/cpptohtml/array.html"  class="mycode large"></iframe>
+
+
+</div>
+<script src="homescript.js"></script>
+</div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+return_type function_name( parameter list ) {
+   //body of the function
+   //task to be performed by the function
+}

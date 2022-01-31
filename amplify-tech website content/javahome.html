@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Java</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="homestyle.css">
+</head>
+
+<body onload="openNav()">
+
+<nav class="navbar navbar-inverse navbar-fixed-top" style="background-color: #db4dff;">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <button class="openbtn navbar-brand"  style="background-color: #3385ff; color: black;" onclick="openNav()">☰</button>
+      <a class="navbar-brand" style="color: black; margin-left: 2px;" href="index.html">Amplifytech</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+          <li><a href="cpphome.html">C++</a></li>
+          <li><a href="pyhome.html">Python</a></li>
+          <li class="active"><a href="javahome.html">Java</a></li>
+
+          <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="working.html">Web Development<span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="working.html">HTML</a></li>
+              <li><a href="working.html">CSS</a></li>
+              <li><a href="working.html">Javascript</a></li>
+            </ul>
+          </li>
+
+          <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="working.html"> Database<span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="working.html">Mysql</a></li>
+              <li><a href="working.html">sqlite</a></li>
+              <li><a href="working.html">postgres</a></li>
+            </ul>
+          </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+  
+<div class="container">
+  <br><br><br><br>
+<div id="mySidebar" class="sidebar">
+  <p style="font-size: 25px;">Topics</p>
+  <p class="activetopic"> <a href="#intro">Intro</a> </p>
+  <a href="#syn">Syntax</a>
+  <a href="#">Variables</a>
+  <a href="#">String</a>
+  <a href="#">Ouput</a>
+  <a href="#">Input</a>
+  <a href="#">If else</a>
+  <a href="#">For & while loop</a>
+  <a href="#">Array</a>
+  <a href="#">State</a>
+  <a href="#">Function</a>
+  <a href="#">Recursion</a>
+  <a href="#">Sorting</a>
+  <a href="#">Pointer</a>
+  <a href="#">Class-Structure</a>
+  <a href="#">Enum</a>
+  <a href="#">Vector</a>
+  <a href="#">Map</a>
+  <a href="#">File input-output</a>
+ </div>
+
+  <div id="main" class="mynotes">
+
+  <h1 class="maintopic"> Java </h1>
+ <a href=""> <p class="subtopic" id="intro">Intro </p> </a>
+ <p> filename:- filename.java <br>
+   compile :- javac  filename.java <br>
+   Run program :- java  filename <br>
+   first save file as filename.java then compile then run. A file named <i> filename.class</i>
+   will automatically create during compilation of java program. </p>
+  <img style="width: 100%; height: auto;" src="img/screenshot/javarun.png">
+
+  <a href=""> <p class="subtopic" id="syn">Syntax </p> </a>
+  <iframe src="javatohtml/start.html" style="max-width: 800px; width: 100%; height: 130px;"></iframe>
+
+  <div class="outputdiv">
+    <button class="btnanm" onclick="myhide(this)">Output</button>
+    <div  class="output">
+      <span style="color: blue;">$</span> javac filename.java
+      <span style="color: blue;">$</span> java filename
+      Hello friends
+    </div>
+  </div>
+
+  </div>
+
+
+</div>
+<script src="homescript.js"></script>
+</div>
+
+</body>
+</html>

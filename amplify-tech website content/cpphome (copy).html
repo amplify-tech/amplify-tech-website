@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>C++</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="homestyle.css">
+</head>
+
+<body onload="openNav()">
+
+<nav class="navbar navbar-inverse navbar-fixed-top" style="background-color: #db4dff;">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <button class="openbtn navbar-brand"  style="background-color: #3385ff; color: black;" onclick="openNav()">☰</button>
+      <a class="navbar-brand" style="color: black; margin-left: 2px;" href="index.html">Amplifytech</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+          <li class="active"><a href="cpphome.html">C++</a></li>
+          <li><a href="pyhome.html">Python</a></li>
+          <li><a href="javahome.html">Java</a></li>
+
+          <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="working.html">Web Development<span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="working.html">HTML</a></li>
+              <li><a href="working.html">CSS</a></li>
+              <li><a href="working.html">Javascript</a></li>
+            </ul>
+          </li>
+
+          <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="working.html"> Database<span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="working.html">Mysql</a></li>
+              <li><a href="working.html">sqlite</a></li>
+              <li><a href="working.html">postgres</a></li>
+            </ul>
+          </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+  
+<div class="container">
+  <br><br><br><br>
+<div id="mySidebar" class="sidebar">
+  <p style="font-size: 25px;">Topics</p>
+  <p class="activetopic"> <a href="#intro">Intro</a> </p>
+  <a href="#temp">Syntax</a>
+  <a href="#var">Variables</a>
+  <a href="#str">String</a>
+  <a href="#out">Ouput</a>
+  <a href="#inpt">Input</a>
+  <a href="#if">If else</a>
+  <a href="#for">For & while loop</a>
+  <a href="#arr">Array</a>
+  <a href="#">State</a>
+  <a href="#">Function</a>
+  <a href="#">Recursion</a>
+  <a href="#">Sorting</a>
+  <a href="#">Pointer</a>
+  <a href="#">Class-Structure</a>
+  <a href="#">Enum</a>
+  <a href="#">Vector</a>
+  <a href="#">Map</a>
+  <a href="#">File input-output</a>
+ </div>
+
+<div id="main" class="mynotes">
+  <h1 class="maintopic"> C++ </h1>
+ <a href=""> <p class="subtopic" id="intro">Intro </p> </a>
+ <p> filename:- filename.cpp <br>
+   compile :- g++  filename.cpp <br>
+   Run program :- ./a.out <br>
+   first save file as filename.cpp then compile then run. A file named <i> a.out</i>
+   will automatically create during compilation of cpp program. </p>
+   <img style="width: 100%; height: auto;" src="img/screenshot/run.png" >
+
+
+  <a href=""> <p class="subtopic" id="temp">Template </p> </a>
+  <p>This is how the syntax of C++ looks. </p>
+  <iframe src="cpptohtml/template.html"  class="mycode"></iframe>
+
+  <a href=""> <p class="subtopic" id="var">Variables </p> </a>
+  <p>Variables are used to store different values and dealing with them. Datatypes 
+    are the types of variables. Some of the datatypes in cpp are <i>int, float, double, 
+    char, string, bool, void ... </i> </p>
+  <iframe src="cpptohtml/var.html"  class="mycode"></iframe>
+
+  <a href=""> <p class="subtopic" id="out">Output </p> </a>
+  <p>cout is used to print something in c++ . </p>
+  <iframe src="cpptohtml/output.html"  class="mycode"></iframe>
+
+  <div class="outputdiv">
+    <button class="btnanm" onclick="myhide(this)">Output</button>
+    <div  class="output">
+      <span style="color: blue;">$</span> g++ example.cpp
+      <span style="color: blue;">$</span> ./a.out
+      45
+      45.214
+      w
+      1
+      hello friends
+      How are you
+      hello friends How are you
+    </div>
+  </div>
+
+  <a href=""> <p class="subtopic" id="inpt">Input </p> </a>
+  <p>In c++ cin is used to take input something. </p>
+  <iframe src="cpptohtml/input.html"  class="mycode"></iframe>
+
+  <div class="outputdiv">
+    <button class="btnanm" onclick="myhide(this)">Output</button>
+    <div  class="output">
+      <span style="color: blue;">$</span> g++ example.cpp
+      <span style="color: blue;">$</span> ./a.out
+      Enter the value of x (integer) 35
+      the value of x is 35
+      Enter the value of y (a character) #
+      the value of y is #
+      Enter the value of z (a bool variable) 5
+      the value of z is 1
+    </div>
+  </div>
+
+  <a href=""> <p class="subtopic" id="str">String </p> </a>
+  <p>we need to include a header file as <i> #include&ltstring&gt </i> </p>
+  <iframe src="cpptohtml/string.html"  class="mycode"></iframe>
+
+  <div class="outputdiv">
+    <button class="btnanm" onclick="myhide(this)">Output</button>
+    <div  class="output">
+      <span style="color: blue;">$</span> g++ example.cpp
+      <span style="color: blue;">$</span> ./a.out
+      Amplify Tech
+      Amplify Tech
+      plify Tech
+      mpl
+      2
+      12
+      m
+    </div>
+  </div>
+
+  <a href=""> <p class="subtopic" id="if">if else </p> </a>
+  <p>if else is used for conditional statement </p>
+  <iframe src="cpptohtml/ifelse.html"  class="mycode"></iframe>
+
+  <div class="outputdiv">
+    <button class="btnanm" onclick="myhide(this)">Output</button>
+    <div  class="output">
+      <span style="color: blue;">$</span> g++ example.cpp
+      <span style="color: blue;">$</span> ./a.out
+      Enter a number 23
+      23 is greater than 9
+    </div>
+  </div>
+
+  <a href=""> <p class="subtopic" id="for">For loop & while loop </p> </a>
+  <p> A loop is used for executing a block of statements repeatedly until a particular condition is satisfied. Here is a code for printing squares of numbers from 1 to 5 </p>
+  <iframe src="cpptohtml/forloop.html"  class="mycode"></iframe>
+
+  <div class="outputdiv">
+    <button class="btnanm" onclick="myhide(this)">Output</button>
+    <div  class="output">
+      <span style="color: blue;">$</span> g++ example.cpp
+      <span style="color: blue;">$</span> ./a.out
+      while loop :-
+      1
+      4
+      9
+      16
+      25
+      for loop :-
+      1
+      4
+      9
+      16
+      25
+    </div>
+  </div>
+
+  <a href=""> <p class="subtopic" id="arr">Array </p> </a>
+  <p> Array is a collection of variables of same datatypes. Array is
+   used when we have to deal with large number variables. an array has a 
+  fixed size and its i'th element can be access by <b> <i> arrayname[i] </i></b>. we need to write
+  array size during initialisition of array as <b> <i>datatype arrayname[size];</i> </b>   </p>
+  <iframe src="cpptohtml/array.html"  class="mycode"></iframe>
+
+  <div class="outputdiv">
+    <button class="btnanm" onclick="myhide(this)">Output</button>
+    <div  class="output">
+      <span style="color: blue;">$</span> g++ example.cpp
+      <span style="color: blue;">$</span> ./a.out
+      0 1 4 9 16
+    </div>
+  </div>
+
+
+</div>
+<script src="homescript.js"></script>
+</div>
+
+</body>
+</html>
